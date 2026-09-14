@@ -5,21 +5,21 @@
 class Regtool < Formula
   desc "Switch package manager registries between regional mirrors"
   homepage "https://github.com/ZHallen122/RegTool"
-  version "1.0.0"
+  version "1.1.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ZHallen122/RegTool/releases/download/v1.0.0/regtool_1.0.0_darwin_amd64.tar.gz"
-      sha256 "6f9f563ba8bc4021cc816c82d8a951e814d28810235786b9288c265cb984e55c"
+      url "https://github.com/ZHallen122/RegTool/releases/download/v1.1.0/regtool_1.1.0_darwin_amd64.tar.gz"
+      sha256 "85ce604512bb045011f04777edf8e2432f7eb0a106bcc183c8226349c5d278e4"
 
       define_method(:install) do
         bin.install "regtool"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ZHallen122/RegTool/releases/download/v1.0.0/regtool_1.0.0_darwin_arm64.tar.gz"
-      sha256 "11b7c833471317caf614a1bed520cd54609289a6d512d07b95090a73655fef38"
+      url "https://github.com/ZHallen122/RegTool/releases/download/v1.1.0/regtool_1.1.0_darwin_arm64.tar.gz"
+      sha256 "e2ed3235f938d5860781c5f5c0d14a60951491ae79268850886ea1b1bd1da91e"
 
       define_method(:install) do
         bin.install "regtool"
@@ -29,15 +29,15 @@ class Regtool < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ZHallen122/RegTool/releases/download/v1.0.0/regtool_1.0.0_linux_amd64.tar.gz"
-      sha256 "34c71d9f5f7c03bd7f36a52779411dda94df86ff4c57ff1b22f46dfa4155ced7"
+      url "https://github.com/ZHallen122/RegTool/releases/download/v1.1.0/regtool_1.1.0_linux_amd64.tar.gz"
+      sha256 "d71ffaef63ad4745458be9d104cd4c8d2b704e968daffb4597057f052e830beb"
       define_method(:install) do
         bin.install "regtool"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ZHallen122/RegTool/releases/download/v1.0.0/regtool_1.0.0_linux_arm64.tar.gz"
-      sha256 "8a964ebfbabff686b30d7eb12c3c9f179dc1c61b4fe793b12b9cedc842504517"
+      url "https://github.com/ZHallen122/RegTool/releases/download/v1.1.0/regtool_1.1.0_linux_arm64.tar.gz"
+      sha256 "4b828433c918cce09aa3a8e65bc315caecbda3f17ba9990239917bcec257835c"
       define_method(:install) do
         bin.install "regtool"
       end
